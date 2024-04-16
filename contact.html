@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+
+   
+
+    #card{
+      margin-top: 100px;
+    }
+    .conteact{
+      text-align: center;
+    }
+    .abcd{
+      margin-top: 100px;
+    }
+    .card {
+display: flex;
+flex-direction: column;
+width: 100%;
+max-width: 1000px;
+margin: 0 auto;
+box-sizing: border-box;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+.heading{
+font-size: 40px;
+}
+.check{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+}
+span{
+position: absolute;
+margin-top: 4px;
+margin-left: 16px;
+}
+.flex-container {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.flex-item {
+display: flex;
+flex: 1 1 30%;
+margin-right: 2%;
+margin-bottom: 20px;
+flex-direction: column;
+background-color: #f2f2f2;
+border-radius: 5px;
+padding: 10px;
+box-sizing: border-box;
+}
+
+.flex-item:nth-child(3n) {
+margin-right: 0;
+}
+
+.flex-item label {
+display: block;
+margin-bottom: 10px;
+font-weight: bold;
+}
+.dropdown{
+border-radius: 5px;
+box-sizing: border-box;
+height: 38px;
+font-size: 16px;
+background-color: #f2f2f2;
+border: 1px solid #ccc;
+box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+.flex-item input[type="text"] {
+display: block;
+width: 100%;
+padding: 10px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+box-sizing: border-box;
+margin-bottom: 20px;
+}
+
+.flex-item input[type="text"]:focus {
+outline: none;
+box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+
+@media (max-width: 768px) {
+.flex-item {
+flex: 1 1 100%;
+margin-right: 0;
+margin-bottom: 20px;
+}
+}
+
+.container {
+display: flex;
+flex-direction: column;
+width: 100%;
+max-width: 1000px;
+margin: 0 auto;
+box-sizing: border-box;
+background-color: rgb(251, 248, 235);
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+label {
+display: block;
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+display: block;
+width: 100%;
+padding: 10px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+box-sizing: border-box;
+margin-bottom: 20px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+outline: none;
+box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+p {
+margin-bottom: 20px;
+font-size: 16px;
+margin-left: 10px;
+}
+
+label[for="i-agree"] {
+display: inline-block;
+margin-right: 10px;
+font-weight: bold;
+}
+
+input[type="checkbox"] {
+display: inline-block;
+margin-right: 10px;
+height: 20px;
+width: 20px;
+}
+h3{
+color: rgb(225,79,90)
+}
+
+
+@media (max-width: 768px) {
+.container {
+width: 100%;
+}
+}
+
+.big-button {
+display: block;
+padding: 20px 40px;
+font-size: 24px;
+font-weight: bold;
+border: none;
+border-radius: 80px;
+background-color:rgb(209,54, 43);
+color: #fff;
+cursor: pointer;
+box-sizing: border-box;
+}
+#button-big--1{
+width: 40%;
+}
+
+.big-button:hover {
+background-color: #2b6c2e;
+}
+
+.center {
+margin: 0 auto;
+display: block;
+}
+
+@media (max-width: 368px) {
+.big-button {
+width: 0%;
+}
+#button-big--1{
+width: 200px auto;
+}
+}
+footer{
+  background-color: black;
+  height: 80px;
+  margin-top: 100px;
+  
+}
+#button{
+  background-color: red;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+#button:hover{
+  background-color: green;
+  color: white;
+}
+.footer-h4{
+  padding-top: 30px;
+  color: green;
+  text-align: center;
+  position: relative;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="main.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Cybersccurity Academy</title>
+    <link rel="stylesheet" href="">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-black ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="menu" style="background-color: white;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0 "   id="menu-1">
+              <li><a class="active " href="index.html">Home</a></li>
+              <li><a href="abouts.html" >About</a></li>
+              <li><a href="servise.html">Services</a></li>
+              <li><a href="coures.html">Coures</a></li>
+              <li><a href="contact.html">Contact Us</a></li>         
+            </ul>       
+          </div>
+        </div>
+      </nav>
+    </header>
+  <body style="background-color: black;">
+    <div class="card" id="card"> 
+        <h2 class="conteact">Contact Us</h2>
+        <div class="flex-container" id="abcd">
+          <div class="flex-item">
+            <label for="item-1">First Name</label>
+            <input type="text" id="item-1" placeholder="First Name" name="item-1" required>
+          </div>
+          <div class="flex-item">
+            <label for="item-1">Last Name</label>
+            <input type="text" id="item-2" placeholder="Last Name" name="item-2" required>
+          </div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">
+              <label for="item-1">Email Address</label>
+              <input type="text" id="item-1" placeholder="Email Address" name="item-1" required>
+            </div>
+          </div>
+          <h1>Billing Address</h1>
+          <div class="flex-container">
+            <div class="flex-item">
+              <label for="item-1">Address</label>
+              <input type="text" id="item-1" placeholder=" Address" name="item-1" required>
+            </div>
+          </div>
+          <div class="flex-container">
+            <div class="flex-item">
+              <label for="item-1">City</label>
+              <input type="text" id="item-1" placeholder="City" name="item-1" required>
+            </div>
+            <div class="flex-item">
+              <label for="item-1">Country</label>
+              <select id="item-1" class="dropdown">
+                <option value="option1" class="dropdown">Country</option>
+              <option value="option1" class="dropdown">Afghanistan</option>
+              <option value="option2" class="dropdown">Albania</option>
+              <option value="option3" class="dropdown">Antigua and Barbuda</option>
+              <option value="option1" class="dropdown">Argentina</option>
+              <option value="option2" class="dropdown">Belarus</option>
+              <option value="option3" class="dropdown"> Belgium</option>
+              <option value="option1" class="dropdown"> Belize</option>
+              <option value="option2" class="dropdown">Benin (Dahomey)</option>
+              <option value="option3" class="dropdown">Canada</option>
+              <option value="option1" class="dropdown">Central American Federation</option>
+              <option value="option2" class="dropdown">Central African Republic</option>
+              <option value="option3" class="dropdown"> Denmark</option>
+              <option value="option1" class="dropdown">Djibouti</option>
+              <option value="option2" class="dropdown">Dominica</option>
+              <option value="option3" class="dropdown"> Egypt</option>
+              <option value="option1" class="dropdown">El Salvador</option>
+              <option value="option2" class="dropdown">Finland</option>
+              <option value="option3" class="dropdown">Hawaii</option>
+              <option value="option1" class="dropdown">Hesse</option>
+              <option value="option2" class="dropdown">India</option>
+              <option value="option3" class="dropdown">Iran</option>
+              <option value="option1" class="dropdown"> Iraq</option>
+              <option value="option2" class="dropdown">Ireland</option>
+              <option value="option3" class="dropdown">Japan</option>
+            </select>
+            </div>
+          </div>
+          <div class="flex-container">
+            <div class="flex-item">
+              <label for="item-1">Region</label>
+              <input type="text" id="item-1" placeholder="Region" name="item-1" required>
+            </div>
+            <div class="flex-item">
+              <label for="item-1">Postel Code</label>
+              <input type="text" id="item-2" placeholder="Postel Code" name="item-2" required>
+            </div>
+          </div>
+         <button id="button">submit</button>
+        </div> 
+    </div>  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

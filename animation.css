@@ -1,0 +1,68 @@
+#ok--1{
+    animation: step 1s ease-in-out;
+}
+@keyframes step{
+    0%{
+      opacity: 0;
+      transform:translateY(170%);
+    }
+}
+#ok--2{
+    animation: step 1.10s ease-in-out;
+}
+@keyframes step{
+    0%{
+      opacity: 0;
+      transform:translateY(170%);
+    }
+}
+
+#ok--3{
+    animation: step 1.12s ease-in-out;
+}
+@keyframes step{
+    0%{
+      opacity: 0;
+      transform:translateY(170%);
+    }
+}
+
+#ok--4{
+    animation: step 1.17s ease-in-out;
+}
+@keyframes step{
+    0%{
+      opacity: 0;
+      transform:translateY(170%);
+    }
+}
+
+#left{
+  animation: left 2s ease-in-out;
+}
+@keyframes left{
+  0%{
+    opacity: 0;
+    transform:translateX(160%);
+  }
+}
+
+#right{
+  animation: right 2s ease-in-out;
+}
+@keyframes right{
+  0%{
+    opacity: 0;
+    transform:translateX(-160%);
+  }
+}
+
+#footer{
+  animation: footer 1s ease-in-out;
+}
+@keyframes footer{
+  0%{
+    opacity: 0;
+    transform:translateY(50%);
+  }
+}
